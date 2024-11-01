@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import styles from './cssModule/blogList.module.css'
 import { PostType } from './types/PostType';
 
-const BlogList: React.FC = () => {
+type PostsResponse = {
+  posts: PostType[]
+};
 
-  type PostsResponse = {
-    posts: PostType[]
-  };
+const BlogList: React.FC = () => {
 
   const [posts, setPosts] = useState<PostType[]>([]);
   const [loading, setLoading] = useState<boolean>(true);

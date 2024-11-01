@@ -1,22 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styles from './cssModule/blogList.module.css'
+import { PostType } from './types/PostType';
+
+type PostParams = {
+  postId: string;
+}
 
 const PostsDetails: React.FC = () => {
-  type Post = {
-    id: number,
-    title:string,
-    thumbnailUrl: string,
-    createdAt: string,
-    categories: string[],
-    content: string
-  };
-  type PostParams = {
-    postId: string;
-  }
 
   const { postId } = useParams<PostParams>();
-  const [post, setPost] = useState<Post>();
+  const [post, setPost] = useState<PostType>();
   const [loading, setLoading] = useState<boolean>(true);
 
   // APIでpostsを取得する処理をuseEffectで実行します。
