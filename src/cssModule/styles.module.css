@@ -1,0 +1,13 @@
+.content {
+  max-width: 800px;
+  margin: 120px auto 40px;
+  padding: 0 1rem;
+}
+
+a {
+  transition: 0.3s ease-in-out;
+}
+
+a:hover {
+  opacity: 0.7;
+}
