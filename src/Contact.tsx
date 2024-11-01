@@ -1,7 +1,7 @@
 import { FieldErrors, useForm } from "react-hook-form";
 import styles from './cssModule/contact.module.css'
 
-const Contact = () => {
+const Contact: React.FC = () => {
   type FormData = {
     name: string,
     email:string,

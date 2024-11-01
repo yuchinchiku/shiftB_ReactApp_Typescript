@@ -21,7 +21,7 @@ const colorStyles: CustomCSSProperties = {
   '--color-gray': '#888',
 };
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <>
       <div style={colorStyles}>

@@ -1,16 +1,9 @@
 import React, { useEffect, useState }  from "react";
 import { Link } from "react-router-dom";
 import styles from './cssModule/blogList.module.css'
+import { PostType } from './types/PostType';
 
-const BlogList = () => {
-  type PostType = {
-    id: number,
-    title:string,
-    thumbnailUrl: string,
-    createdAt: string,
-    categories: string[],
-    content: string
-  };
+const BlogList: React.FC = () => {
 
   type PostsResponse = {
     posts: PostType[]

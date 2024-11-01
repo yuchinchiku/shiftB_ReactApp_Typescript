@@ -5,7 +5,7 @@ import type { NavItem } from "./data/nav.ts";
 
 import styles from './cssModule/header.module.css'
 
-const Header = () => (
+const Header: React.FC = () => (
   <header className={styles.header}>
     <nav className={styles.nav}>
       <ul className={styles.navList}>

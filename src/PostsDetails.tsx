@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styles from './cssModule/blogList.module.css'
 
-const PostsDetails = () => {
+const PostsDetails: React.FC = () => {
   type Post = {
     id: number,
     title:string,
